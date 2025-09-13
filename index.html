@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dropout Prediction Dashboard</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+  <header>
+    <div class="logo">🎓 SIH</div>
+    <h1>AI Dropout Prediction Dashboard</h1>
+    <p>Upload CSVs → Detect At-Risk Students → Take Action</p>
+  </header>
+
+  <section class="upload-section">
+    <input type="file" id="attendanceFile" accept=".csv">
+    <label for="attendanceFile">Upload Attendance CSV</label>
+
+    <input type="file" id="marksFile" accept=".csv">
+    <label for="marksFile">Upload Marks CSV</label>
+
+    <input type="file" id="feesFile" accept=".csv">
+    <label for="feesFile">Upload Fees CSV</label>
+
+    <button id="processBtn">Process Data</button>
+  </section>
+
+  <section id="dashboard"></section>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
